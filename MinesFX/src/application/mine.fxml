@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="root" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.19996032714846" minWidth="1.5999969601631108" prefWidth="178.39998779296874" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="599.2000030398368" minWidth="10.0" prefWidth="422.4000122070312" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="146.60001220703126" minHeight="10.0" prefHeight="49.000006103515624" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="330.4" minHeight="10.0" prefHeight="200.99999389648437" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="251.20003356933591" minHeight="0.0" prefHeight="136.80002441406248" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="reset_button" alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#reset" prefHeight="10.0" prefWidth="103.0" text="Reset" textAlignment="JUSTIFY" GridPane.rowIndex="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" top="-150.0" />
+         </GridPane.margin>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="50.0" text="Width" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" top="-60.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="width" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="19.0" prefWidth="102.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="70.0" top="-60.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="50.0" text="height" GridPane.rowIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="height" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="19.0" prefWidth="102.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="70.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="50.0" text="mines" GridPane.rowIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" top="60.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="mines" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="19.0" prefWidth="102.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="70.0" top="60.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="431.0" text="Minesweeper " textFill="WHITE" GridPane.columnIndex="1">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="30.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="-100.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
